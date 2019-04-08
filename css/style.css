@@ -1,7 +1,10 @@
 body{
-
+	font-family: 'Lato', sans-serif;
 }
-
+*{
+	margin: 0;
+	padding: 0;
+}
 /* Typography */
 a,
 input[type="submit"],
@@ -54,4 +57,334 @@ textarea {
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
+}
+.heroSection{
+	width: 100vw;
+	height: 100vh;
+	background: url("../images/hero.png") top right no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.logoContainer{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 800px;
+	height: 400px;
+	text-align: center;
+}
+.logo{
+	background: url("../images/logo.svg") center center no-repeat;
+	width: 70px;
+	height: 72px;
+	margin: auto;
+	margin-bottom: 90px;
+}
+.title{
+	font-size: 54px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 50px;
+}
+.subTitle{
+	font-size: 15px;
+	letter-spacing: 0.006em;
+	line-height: 29px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.scroll{
+	background: url("../images/scroll.svg") center center no-repeat;
+	width: 23px;
+	height: 37px;
+	position: absolute;
+	right: calc(50% - 12px);
+	bottom: 35px;
+}
+.scroll:hover{
+	opacity: .6;
+}
+.SectionAboutUs{
+	position: relative;
+	height: 630px;
+	width: 100%;
+	background-color: #ffffff;
+}
+.aboutUs__title{
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	padding: 0 100px;
+	background-color: #ffffff;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 210px);
+}
+.aboutUs{
+	width: 900px;
+	height: 310px;
+	border: 2px solid #3c3c3c;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+.aboutUs__text{
+	font-weight: 300;
+	font-size: 16px;
+	color: #3c3c3c;
+	width: 560px;
+	margin: auto;
+	margin-top: 75px;
+}
+.aboutUs__text p{
+	margin: 30px auto;
+}
+.aboutUs__text p:last-child{
+	width: 450px;
+}
+.SectionServices{
+	height: 490px;
+	width: 100%;
+	background: url("../images/services.jpg") center center no-repeat;
+	position: relative;
+}
+.services{
+	width: 900px;
+	height: 310px;
+	border: 2px solid #ffffff;
+	border-width: 0 2px 2px;
+	background: url("../images/frame.svg");
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+.services:before,
+.services:after{
+	display: block;
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: #ffffff;
+	width: 22%;
+	top: 0;
+}
+.services:before{
+	left: 0;
+}
+.services:after{
+	right: 0;
+}
+.services__title{
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 0 100px;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 210px);
+}
+.services__text{
+	font-weight: 300;
+	font-size: 16px;
+	color: #ffffff;
+	width: 560px;
+	margin: auto;
+	margin-top: 75px;
+	line-height: 26px;
+	letter-spacing: 0.060em;
+}
+.services__text p {
+	margin: 30px auto;
+}
+.SectionWeDo{
+	height: 1400px;
+	width: 100%;
+	position: relative;
+}
+.weDo__container{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 120px auto;
+	width: 900px;
+	border: 2px solid #000000;
+	padding: 125px 170px 90px 170px;
+}
+.weDo__title{
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 0 100px;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 239px);
+}
+.weDo__item--logo1{
+	background: url("../images/logo_design.png") center center no-repeat;
+	width: 80px;
+	height: 83px;
+	margin: auto;
+}
+.weDo__item--logo2{
+	background: url("../images/logo_development.png") center center no-repeat;
+	width: 79px;
+	height: 76px;
+	margin: auto;
+}
+.weDo__item--logo3{
+	background: url("../images/logo_management.png") center center no-repeat;
+	width: 79px;
+	height: 91px;
+	margin: auto;
+}
+.weDo__text{
+	padding-bottom: 90px;
+}
+.weDo__text:last-child{
+	padding-bottom: 0;
+}
+.weDo__text p{
+	font-weight: 300;
+	font-size: 14px;
+	color: #3c3c3c;
+	text-align: center;
+	line-height: 26px;
+}
+.weDo_subtitle{
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	margin: 30px auto;
+	text-align: center;
+}
+.SectionOurWorks{
+	width: 1920px;
+	margin: 0 auto;
+}
+.image-3-10,
+.image-2-5{
+	height: 237px;
+}
+.OurWorks__block{
+	position: relative;
+}
+.OurWorks__title{
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: #ffffff;
+	position: absolute;
+	bottom: 35px;
+	left: 50px;
+}
+.SectionContactUs{
+	position: relative;
+	height: 440px;
+	width: 100%;
+	background-color: #ffffff;
+}
+.ContactUs__title{
+	font-weight: 700;
+	font-size: 34px;
+	letter-spacing: 0.160em;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	padding: 0 100px;
+	background-color: #ffffff;
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 230px);
+}
+.ContactUs{
+	width: 900px;
+	height: 300px;
+	border: 2px solid #3c3c3c;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 0;
+}
+.ContactUs__text{
+	font-weight: 300;
+	font-size: 16px;
+	color: #3c3c3c;
+	width: 560px;
+	margin: auto;
+	margin-top: 75px;
+}
+.ContactUs__text p{
+	margin: 30px auto;
+}
+.ContactUs__text p:last-child{
+	width: 450px;
+}
+.ContactUs__text a{
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #3c3c3c;
+	margin: 20px auto;
+	padding: 20px 20px;
+	width: 400px;
+}
+.ContactUs__text a:hover{
+	background: #e62131;
+	width: 420px;
+}
+.ba-footer{
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.footer_container{
+	height: 37px;
+	width: 320px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+.footer__logo{
+	float: left;
+	background: url("../images/footer_logo2.png") center center no-repeat;
+	height: 37px;
+	width: 35px;
+}
+.footer__copyrights{
+	float: right;
+	font-weight: 300;
+	font-size: 14px;
+	color: #3c3c3c;
+	line-height: 37px;
 }
